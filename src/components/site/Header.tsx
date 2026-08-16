@@ -55,7 +55,7 @@ export function Header() {
         Complimentary UK delivery on orders over £60 · Fresh from Belgium each week
       </p>
 
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-6 px-5 py-3.5 lg:px-10">
+      <div className="mx-auto flex h-[76px] max-w-[1400px] items-center justify-between gap-6 px-5 lg:px-10">
         <button
           className="text-navy lg:hidden"
           aria-label="Open menu"
@@ -64,8 +64,8 @@ export function Header() {
           <Menu className="size-5" strokeWidth={1.25} />
         </button>
 
-        <Link to="/" className="shrink-0" aria-label="Leonidas UK home">
-          <img src={logo} alt="Leonidas" width={52} height={52} className="size-11 lg:size-12" />
+        <Link to="/" className="h-full shrink-0" aria-label="Leonidas UK home">
+          <img src={logo} alt="Leonidas" width={76} height={76} className="h-full w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
