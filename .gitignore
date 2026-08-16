@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+
+# Build and framework output
+dist/
+dist-ssr/
+.output/
+.nitro/
+.vinxi/
+.tanstack/
+
+# Environment files
+.env
+.env.*
+!.env.example
+*.local
+.dev.vars
+
+# Logs and diagnostics
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.tsbuildinfo
+
+# Test output
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+blob-report/
+
+# Caches
+.cache/
+.vite/
+.turbo/
+.eslintcache
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Deployment tooling
+.wrangler/
+.vercel/
+.netlify/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
