@@ -4,6 +4,16 @@ import { Instagram, Facebook, Youtube } from "lucide-react";
 
 const logo = "/Leonidas-2_100x@2x.avif";
 
+const paymentMethods = [
+  { name: "Visa", logo: "/payment-logos/visa.svg" },
+  { name: "Mastercard", logo: "/payment-logos/mastercard.svg" },
+  { name: "American Express", logo: "/payment-logos/american-express.svg" },
+  { name: "Apple Pay", logo: "/payment-logos/apple-pay.svg" },
+  { name: "Google Pay", logo: "/payment-logos/google-pay.svg" },
+  { name: "PayPal", logo: "/payment-logos/paypal.svg" },
+  { name: "Klarna", logo: "/payment-logos/klarna.svg" },
+];
+
 const columns = [
   {
     title: "Shop",
@@ -61,14 +71,22 @@ export function Footer() {
             <p>© {new Date().getFullYear()} Leonidas UK. Official UK Master Franchisee.</p>
             <p className="text-navy-foreground/70">Designed and Developed by Team Sapco</p>
           </div>
-          <div className="flex flex-wrap gap-5">
-            <span>Visa</span>
-            <span>Mastercard</span>
-            <span>American Express</span>
-            <span>Apple Pay</span>
-            <span>Google Pay</span>
-            <span>PayPal</span>
-            <span>Klarna</span>
+          <div
+            className="flex flex-wrap items-center justify-center gap-2"
+            aria-label="Accepted payment methods"
+          >
+            {paymentMethods.map((method) => (
+              <img
+                key={method.name}
+                src={method.logo}
+                alt={method.name}
+                title={method.name}
+                width={48}
+                height={32}
+                loading="lazy"
+                className="h-7 w-[42px] rounded-[2px] object-contain sm:h-8 sm:w-12"
+              />
+            ))}
           </div>
           <div className="flex gap-5">
             <Link to="/shop" className="hover:text-navy-foreground">Privacy</Link>
