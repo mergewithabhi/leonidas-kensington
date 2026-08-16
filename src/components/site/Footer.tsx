@@ -16,7 +16,7 @@ const columns = [
 export function Footer() {
   return (
     <footer className="bg-navy text-navy-foreground">
-      <div className="mx-auto max-w-[1400px] px-5 py-20 lg:px-10 lg:py-28">
+      <div className="mx-auto max-w-[1400px] px-5 pb-6 pt-16 lg:px-10 lg:pb-8 lg:pt-20">
         <div className="grid gap-14 lg:grid-cols-[1.2fr_repeat(3,1fr)]">
           <div>
             <img src={logo} alt="Leonidas UK" width={72} height={72} className="size-16" loading="lazy" />
@@ -56,8 +56,11 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-16 flex flex-col gap-5 border-t border-navy-foreground/15 pt-8 text-xs text-navy-foreground/55 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} Leonidas UK. Official UK Master Franchisee.</p>
+        <div className="mt-12 flex flex-col gap-5 border-t border-navy-foreground/15 pt-6 text-xs text-navy-foreground/55 md:flex-row md:items-center md:justify-between">
+          <div className="space-y-1.5">
+            <p>© {new Date().getFullYear()} Leonidas UK. Official UK Master Franchisee.</p>
+            <p className="text-navy-foreground/70">Designed and Developed by Team Sapco</p>
+          </div>
           <div className="flex flex-wrap gap-5">
             <span>Visa</span>
             <span>Mastercard</span>
